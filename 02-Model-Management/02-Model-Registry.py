@@ -321,16 +321,6 @@ with mlflow.start_run(run_name="RF Model") as run:
 
 # COMMAND ----------
 
-# MAGIC %md-sandbox <i18n value="27044c82-1822-4090-96a1-82e266b1ce98"/>
-# MAGIC 
-# MAGIC 
-# MAGIC 
-# MAGIC Check the UI to see the new model version.
-# MAGIC 
-# MAGIC <div><img src="https://files.training.databricks.com/images/301/model_version_new.png" style="height: 600px; margin: 20px"/></div>
-
-# COMMAND ----------
-
 # MAGIC %md <i18n value="7d124f10-d8ef-4af6-8e5d-6d0b3d5eecae"/>
 # MAGIC 
 # MAGIC 
@@ -376,6 +366,16 @@ client.transition_model_version_stage(
     version=new_model_version,
     stage="Staging"
 )
+
+# COMMAND ----------
+
+# MAGIC %md-sandbox <i18n value="27044c82-1822-4090-96a1-82e266b1ce98"/>
+# MAGIC 
+# MAGIC 
+# MAGIC 
+# MAGIC Check the UI to see the new model version.
+# MAGIC 
+# MAGIC <div><img src="https://files.training.databricks.com/images/301/model_version_new.png" style="height: 600px; margin: 20px"/></div>
 
 # COMMAND ----------
 
